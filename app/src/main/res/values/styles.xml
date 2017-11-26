@@ -3,16 +3,171 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="color_primary">@color/primary</item>
+        <item name="color_primary_dark">@color/primary_dark</item>
+        <item name="color_accent">@color/accent</item>
+        <item name="color_accent_dark">@color/accent_dark</item>
+        <item name="color_second_accent">@color/second_accent</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorAccentDark">@color/accent_dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="dateHeader" parent="AppTheme" >
-        <item name="android:textColor">@color/colorSecondAccent</item>
+    <style name="btn_basic_raised" parent="AppTheme">
+        <item name="android:paddingLeft">@dimen/btn_paddingleft</item>
+        <item name="android:paddingRight">@dimen/btn_paddingright</item>
+
+    </style>
+
+    <style name="lbl_basic" parent="AppTheme">
+        <item name="android:fontFamily">@font/copse</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="btn_signinoption" parent="btn_basic_raised">
+        <item name="android:layout_width">@dimen/signinoptions_btn_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/signinoptions_btn_padding</item>
+        <item name="android:layout_marginTop">@dimen/signin_loginbtn_margintop</item>
+        <item name="android:layout_marginBottom">@dimen/signin_loginbtn_marginbottom</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:background">@color/primary</item>
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <style name="login_btnlogin" parent="btn_basic_raised">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/signin_loginbtn_margintop</item>
+        <item name="android:layout_marginBottom">@dimen/signin_loginbtn_marginbottom</item>
+    </style>
+
+    <style name="login_btnback" parent="btn_basic_raised">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/signin_backbtn_margintop</item>
+        <item name="android:layout_marginBottom">@dimen/signin_backbtn_marginbottom</item>
+        <item name="android:padding">@dimen/signin_backbtn_padding</item>
+    </style>
+
+    <style name="homepage" parent="AppTheme" >
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/second_accent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="taskWorkspace" parent="AppTheme" >
+        <item name="android:textColor">@color/primary</item>
         <item name="android:gravity">center</item>
         <item name="android:elevation">8dp</item>
-        <item name="android:textSize">35dp</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:background">@drawable/task_workspace_border</item>
+    </style>
+
+    <style name="workspaceToolbar" parent="AppTheme" >
+        <item name="android:background">@color/primary</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+
+    <style name="dateHeader" parent="AppTheme" >
+        <item name="android:textColor">@color/second_accent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+
+    <style name="dayTab" parent="AppTheme" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="tabTextAppearance">@style/dayTabText</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabBackground">@color/accent</item>
+        <item name="tabIndicatorColor">@color/primary</item>
+        <item name="tabIndicatorHeight">4sp</item>
+    </style>
+
+    <style name="dayTabText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/grey_600</item>
+    </style>
+
+    <style name="list_names" parent="AppTheme" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="pstsShouldExpand">true</item>
+        <item name="pstsIndicatorColor">@color/primary</item>
+        <item name="pstsIndicatorHeight">4dp</item>
+        <item name="pstsDividerPadding">3dp</item>
+        <item name="pstsTabTextColor">@color/primary</item>
+        <item name="pstsTabTextSize">25sp</item>
+    </style>
+
+    <style name="category_container" parent="AppTheme" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Add Task-->
+    <style name="addtask_container" parent="lbl_basic">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/addtask_window_margintop</item>
+        <item name="android:layout_marginBottom">@dimen/addtask_window_marginbottom</item>
+        <item name="android:layout_marginLeft">@dimen/addtask_window_marginleft</item>
+        <item name="android:layout_marginRight">@dimen/addtask_window_marginright</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:elevation">24dp</item>
+        <item name="android:background">@drawable/addtask_border</item>
+    </style>
+
+    <style name="addtask_fieldlabel" parent="lbl_basic">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="addtask_title" parent="lbl_basic">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="addtask_btn_inline" parent="btn_basic_raised">
+        <item name="android:minWidth">88dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:background">@drawable/btn_addtask_inline_border</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="addtask_btn_action" parent="btn_basic_raised">
+        <item name="android:minWidth">88dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:background">@drawable/btn_addtask_action_border</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
 </resources>

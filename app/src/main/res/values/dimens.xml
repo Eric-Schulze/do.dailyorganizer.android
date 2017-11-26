@@ -2,4 +2,27 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="btn_paddingleft">16dp</dimen>
+    <dimen name="btn_paddingright">16dp</dimen>
+    <dimen name="signinoptions_btn_padding">12dp</dimen>
+    <dimen name="signinoptions_btn_width">224dp</dimen>
+
+    <dimen name="signin_container_paddingtop">56dp</dimen>
+    <dimen name="signin_container_paddingright">28dp</dimen>
+    <dimen name="signin_container_paddingleft">28dp</dimen>
+    <dimen name="signin_textbox_height">72dp</dimen>
+    <dimen name="signin_textbox_marginbottom">8dp</dimen>
+    <dimen name="signin_textbox_margintop">8dp</dimen>
+    <dimen name="signin_loginbtn_marginbottom">8dp</dimen>
+    <dimen name="signin_loginbtn_margintop">8dp</dimen>
+    <dimen name="signin_backbtn_marginbottom">8dp</dimen>
+    <dimen name="signin_backbtn_margintop">8dp</dimen>
+    <dimen name="signin_backbtn_padding">12dp</dimen>
+
+    <!-- Add Task -->
+    <dimen name="addtask_window_marginbottom">100dp</dimen>
+    <dimen name="addtask_window_margintop">100dp</dimen>
+    <dimen name="addtask_window_marginright">100dp</dimen>
+    <dimen name="addtask_window_marginleft">100dp</dimen>
 </resources>

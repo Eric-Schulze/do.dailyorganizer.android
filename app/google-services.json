@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "124709536327",
+    "firebase_url": "https://dodailyorganizer.firebaseio.com",
+    "project_id": "dodailyorganizer",
+    "storage_bucket": "dodailyorganizer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124709536327:android:76a463469b1f66ef",
+        "android_client_info": {
+          "package_name": "wedevelop.dodailyorganizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124709536327-lcsb4gm2jle3dtpms55nu2j8vofcjk7j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "wedevelop.dodailyorganizer",
+            "certificate_hash": "2bd90162a73690f0c7b7d9bd5c676b551f5e6156"
+          }
+        },
+        {
+          "client_id": "124709536327-tiop513hi7kh8uekqu49k089ro0mg42l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "wedevelop.dodailyorganizer",
+            "certificate_hash": "0ec8af6b9b300e97a23b8bd5f9b7a2ca7a845322"
+          }
+        },
+        {
+          "client_id": "124709536327-sbamb80l106r43qbppmk238cg9fr4vs0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANx5Wi0I8dILpC1D2cs5Kx2CyhA9BI5Fc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124709536327-sbamb80l106r43qbppmk238cg9fr4vs0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

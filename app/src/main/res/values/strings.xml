@@ -1,20 +1,78 @@
 <resources>
     <string name="app_name">DO: Daily Organizer</string>
+
+    <!-- Authentication -->
+    <!-- ... -->
+    <string name="facebook_application_id" translatable="false">144242472879209</string>
+    <!-- Facebook Application ID, prefixed by 'fb'.  Enables Chrome Custom tabs. -->
+    <string name="facebook_login_protocol_scheme" translatable="false">fb144242472879209</string>
+    <string name="sign_in_cancelled">Home</string>
+    <string name="no_internet_connection">Home</string>
+    <string name="unknown_error">Home</string>
+    <string name="unknown_sign_in_response">Home</string>
+
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="app_title">DO: Daily Organizer</string>
+    <string name="title_menudrawer">Actions</string>
+
+
+    <!--Login String-->
+    <string name="signinoptions_email">Sign In With Email</string>
+    <string name="signinoptions_createaccount">Create New Account</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_google_hint">Google Email</string>
+    <string name="login_facebook_hint">Facebook Email</string>
+    <string name="login_loginbtn">LOGIN</string>
+    <string name="login_backbtn">BACK</string>
 
     <string name="date_placeholder">&lt;Date Placeholder&gt;"</string>
 
-    <string-array name="Planets">
-        <item>Sun</item>
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
-    </string-array>
+    <string name="tab_monday">MON</string>
+    <string name="tab_tuesday">TUES</string>
+    <string name="tab_wednesday">WED</string>
+    <string name="tab_thursday">THUR</string>
+    <string name="tab_friday">FRI</string>
+    <string name="tab_saturday">SAT</string>
+    <string name="tab_sunday">SUN</string>
+
+    <!-- Drawer Util-->
+    <string name="add_task">Add Task</string>
+    <string name="weekly_template">Weekly Template</string>
+    <string name="next_week">Next Week</string>
+    <string name="previous_week">Previous Week</string>
+    <string name="migrate">Migrate Unfinised Tasks to Next Week</string>
+    <string name="settings">Setting</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="sign_out">Sign Out</string>
+
+    <!-- Add Task -->
+    <string name="txt_addtasktitle">Add Task</string>
+    <string name="txt_edittasktitle">Edit Task</string>
+    <string name="txt_task_title">Title</string>
+    <string name="txt_task_date">Date</string>
+    <string name="btn_task_nextweek">Next Week</string>
+    <string name="btn_task_tomorrow">Tomorrow</string>
+    <string name="txt_task_time">Time</string>
+    <string name="txt_task_optional">(Optional)</string>
+    <string name="txt_task_priority">High Priority</string>
+    <string name="txt_task_list">List</string>
+    <string name="txt_task_category">Category</string>
+    <string name="txt_task_notes">Notes</string>
+    <string name="btn_task_save">Save</string>
+    <string name="btn_task_cancel">Cancel</string>
+    <string name="btn_task_delete">Delete</string>
+
+    <!-- Accessibility Commands-->
+    <string name="drawer_open">Open Actions</string>
+    <string name="drawer_close">Close Actions</string>
+
+    <!-- Shared Preferences -->
+    <string name="preference_file_key">com.example.DO.USER_APP_INFO</string>
+    <string name="preference_userlistids">USER_LISTIDS</string>
+    <string name="preference_usercategoryids">USER_CATEGORYIDS</string>
+
 </resources>

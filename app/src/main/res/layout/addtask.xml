@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/addtask_container"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/lbl_addtasktitle"
+        style="@style/addtask_title"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/txt_addtasktitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_task_title"
+        style="@style/addtask_fieldlabel"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/txt_task_title"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_task_title"
+        app:layout_constraintEnd_toStartOf="@+id/txt_task_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_addtasktitle" />
+
+    <EditText
+        android:id="@+id/txt_task_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/copse"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_task_title"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_addtasktitle" />
+
+    <TextView
+        android:id="@+id/lbl_task_date"
+        style="@style/addtask_fieldlabel"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/txt_task_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_task_title" />
+
+    <EditText
+        android:id="@+id/txt_task_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_task_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_task_date"
+        app:layout_constraintTop_toBottomOf="@+id/txt_task_title" />
+
+    <Button
+        android:id="@+id/btn_task_nextweek"
+        style="@style/addtask_btn_inline"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_task_nextweek"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_task_tomorrow"
+        app:layout_constraintEnd_toEndOf="@+id/txt_task_date"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_task_tomorrow"
+        app:layout_constraintTop_toBottomOf="@+id/txt_task_date" />
+
+    <Button
+        android:id="@+id/btn_task_tomorrow"
+        style="@style/addtask_btn_inline"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_task_tomorrow"
+        app:layout_constraintEnd_toStartOf="@+id/btn_task_nextweek"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/txt_task_date"
+        app:layout_constraintTop_toBottomOf="@+id/txt_task_date" />
+
+    <TextView
+        android:id="@+id/lbl_task_time"
+        style="@style/addtask_fieldlabel"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/txt_task_time"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_task_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_task_tomorrow" />
+
+    <TextView
+        android:id="@+id/lbl_task_optional"
+        style="@style/addtask_fieldlabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/txt_task_optional"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_task_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lbl_task_time" />
+
+    <EditText
+        android:id="@+id/txt_task_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_task_time"
+        app:layout_constraintTop_toBottomOf="@+id/btn_task_nextweek" />
+
+    <TextView
+        android:id="@+id/lbl_task_priority"
+        style="@style/addtask_fieldlabel"
+        android:layout_width="160dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/txt_task_priority"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_task_time" />
+
+    <CheckBox
+        android:id="@+id/chk_task_priority"
+        android:layout_width="48dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_task_priority"
+        app:layout_constraintStart_toEndOf="@+id/lbl_task_priority"
+        app:layout_constraintTop_toBottomOf="@+id/txt_task_time" />
+
+    <TextView
+        android:id="@+id/lbl_task_list"
+        style="@style/addtask_fieldlabel"
+        android:layout_width="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/txt_task_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_task_priority" />
+
+    <Spinner
+        android:id="@+id/ddl_task_list"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_task_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_task_list" />
+
+    <TextView
+        android:id="@+id/lbl_task_category"
+        style="@style/addtask_fieldlabel"
+        android:layout_width="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/txt_task_category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_task_list" />
+
+    <Spinner
+        android:id="@+id/ddl_task_category"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_task_category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_task_category" />
+
+    <TextView
+        android:id="@+id/lbl_task_notes"
+        style="@style/addtask_fieldlabel"
+        android:layout_width="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/txt_task_notes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_task_category" />
+
+    <EditText
+        android:id="@+id/txt_task_notes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_task_notes"
+        app:layout_constraintTop_toTopOf="@+id/lbl_task_notes" />
+
+    <Button
+        android:id="@+id/btn_task_delete"
+        style="@style/addtask_btn_action"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/btn_task_delete"
+        android:textColor="@color/delete"
+        app:layout_constraintEnd_toStartOf="@+id/btn_task_save"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_task_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/txt_task_notes" />
+
+    <Button
+        android:id="@+id/btn_task_cancel"
+        style="@style/addtask_btn_action"
+        android:layout_height="37dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/btn_task_cancel"
+        android:textColor="@color/accent"
+        android:onClick="cancel"
+        app:layout_constraintEnd_toStartOf="@+id/btn_task_delete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_task_notes" />
+
+    <Button
+        android:id="@+id/btn_task_save"
+        style="@style/addtask_btn_action"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/btn_task_save"
+        android:textColor="@color/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_task_delete"
+        app:layout_constraintTop_toBottomOf="@+id/txt_task_notes" />
+
+    <TextView
+        android:id="@+id/txt_task_taskid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</android.support.constraint.ConstraintLayout>

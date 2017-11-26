@@ -20,7 +20,7 @@ android {
         }
     }
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "wedevelop.dodailyorganizer"
         minSdkVersion 21
@@ -28,6 +28,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resConfigs "auto"
     }
     buildTypes {
         release {
@@ -39,12 +40,35 @@ android {
 }
 
 dependencies {
+    implementation 'com.google.firebase:firebase-auth:11.6.0'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:26.+'
-    compile 'com.android.support:design:26.+'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:mediarouter-v7:26.1.0'
     testCompile 'junit:junit:4.12'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jpardogo.materialtabstrip:library:1.1.1'
+    //Firebase Auth
+    compile 'com.google.firebase:firebase-auth:11.6.0'
+    compile 'com.google.android.gms:play-services-auth:11.6.0'
+    compile 'com.firebaseui:firebase-ui-auth:3.1.0'
+    // Required only if Facebook login support is required
+    compile 'com.facebook.android:facebook-login:4.27.0'
+    //Firebase Firestore
+    compile 'com.google.firebase:firebase-firestore:11.6.0'
+    //Firebase Analytics
+    compile 'com.google.firebase:firebase-core:11.6.0'
+    //Performance Monitoring
+    compile 'com.google.firebase:firebase-perf:11.6.0'
+
+    //Material Drawer
+    implementation("com.mikepenz:materialdrawer:6.0.2@aar") {
+        transitive = true
+        exclude group: 'com.android.support'
+    }
+
 }
+apply plugin: 'com.google.gms.google-services'
